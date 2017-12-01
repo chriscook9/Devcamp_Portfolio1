@@ -8,7 +8,7 @@ class PortfoliosController < ApplicationController
 	end
 
 	def create
-		@portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+		@portfolio_item = portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
 		respond_to do |format|
 			if @portfolio_item.save
@@ -23,10 +23,8 @@ class PortfoliosController < ApplicationController
 
 	def edit
 		@portfolio_item = Portfolio.find(params[:id])
-	end
-
-
-	def update
+	
+  def update
 		@portfolio_item = Portfolio.find(params[:id])
 		respond_to do |format|
 			if @portfolio_item.update(params.require(:portfolios).permit(:title, :subtitle, :body))
@@ -38,6 +36,10 @@ class PortfoliosController < ApplicationController
 			end
 		end
 	end
+end 
+
+
+
 
 
 
