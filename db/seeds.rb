@@ -34,7 +34,7 @@ puts "5 skills created"
 		   successful investors of the 20th century, 
 		  took Carnegie's course at age 20.",
 		main_image: "http://placehold.it/360x150",
-		thumb_image: "http://placehold.it/3200x150"
+		thumb_image: "http://placehold.it/310x150"
  	)
 end
 
