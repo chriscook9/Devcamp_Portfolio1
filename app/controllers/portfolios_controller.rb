@@ -22,6 +22,7 @@ class PortfoliosController < ApplicationController
 
 	def edit
 		@portfolio_item = Portfolio.find(params[:id])
+	end
 	
   def update
 		@portfolio_item = Portfolio.find(params[:id])
@@ -34,12 +35,13 @@ class PortfoliosController < ApplicationController
 			end
 		end
 	end
-end 
+
 
 def show
 	@portfolio_item = Portfolio.find(params[:id])
 end
-def detroy 
+def destroy 
+	@portfolio_item = Portfolio.find(params[:id])
 	# Perform the lookup
 	@portfolio_item.destroy
 
@@ -47,9 +49,10 @@ def detroy
 	@portfolio_item.destroy
 
 	# Redirect
-	rspond_to dp |foramt|
-		format.html { redirect_to blogs_url, notce 'Post was removed'}
-
+	respond_to do |foramt|
+		format.html { redirect_to blogs_url, notice: 'Post was removed'}
+	end
+end
 
 
 end
