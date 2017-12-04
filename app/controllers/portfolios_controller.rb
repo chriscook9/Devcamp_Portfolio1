@@ -12,10 +12,9 @@ class PortfoliosController < ApplicationController
 
 		respond_to do |format|
 			if @portfolio_item.save
-				format.html { redirect_to portfolios_path, notice: 'The Record was successfully created.' }
+				format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
 			else
 				format.html { render :new }
-
 			end
 		end
 	end
@@ -32,15 +31,24 @@ class PortfoliosController < ApplicationController
 
 			else
 				format.html { render :edit }
-
 			end
 		end
 	end
 end 
 
+def show
+	@portfolio_item = Portfolio.find(params[:id])
+end
+def detroy 
+	# Perform the lookup
+	@portfolio_item.destroy
 
+	# Destroy/delete the record
+	@portfolio_item.destroy
 
-
+	# Redirect
+	rspond_to dp |foramt|
+		format.html { redirect_to blogs_url, notce 'Post was removed'}
 
 
 
