@@ -13,7 +13,7 @@ def new
 end
 
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio_item.save
@@ -31,8 +31,9 @@ end
 	
   def update
 		@portfolio_item = Portfolio.find(params[:id])
+
 		respond_to do |format|
-			if @portfolio_item.update(params.require(:portfolios).permit(:title, :subtitle, :body))
+			if @portfolio_item.update()
 				format.html { redirect_to @portfolios_path, notice: 'The record successfully updated.' }
 
 			else
@@ -57,6 +58,16 @@ def destroy
 	respond_to do |foramt|
 		format.html { redirect_to blogs_url, notice: 'Post was removed'}
 	end
+end
+
+private
+
+def portfolio_params
+	params.require(:portfolio).permit(:title,
+									  :subtitle, 
+									  :body, 
+									  technologies_attributes: [:name])
+	
 end
 
 
