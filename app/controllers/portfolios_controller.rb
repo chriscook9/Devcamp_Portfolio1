@@ -1,4 +1,7 @@
 class PortfoliosController < ApplicationController
+	before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+	layout 'portfolio'
+
 	def index
 		@portfolio_items = Portfolio.all
 	end
