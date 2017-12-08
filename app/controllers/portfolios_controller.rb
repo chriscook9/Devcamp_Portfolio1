@@ -1,5 +1,5 @@
 class PortfoliosController < ApplicationController
-	before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+	
 	layout 'portfolio'
 
 	def index
@@ -30,6 +30,7 @@ end
 
 	def edit
 		@portfolio_item = Portfolio.find(params[:id])
+		3.times { @portfolio_item.technologies.build }
 	end
 	
   def update
