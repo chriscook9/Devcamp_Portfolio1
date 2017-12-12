@@ -21,4 +21,7 @@ def login_helper
  		content_tag(:p, greeting, class: "spurce-greeting")
  	end
   end
+    def copyright_generator
+      DevcampViewTool::Renderer.copyright 'Chris cook', 'All rights reserved'
+  end
 end
