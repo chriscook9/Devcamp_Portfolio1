@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@page_title</title>
-    <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -13,22 +13,13 @@
   </head>
 
   <body>
-    <!--start of navigation--> 
-          <%= render 'shared/portfolio_nav' %>
-         <%= render 'shared/portfolio_masthead' %>
-   
-
-
-    <%= render "shared/nav", location:'top' %> 
-
-  	<%= login_helper 'nav-link' %> 
-
-
+    <%= render 'shared/portfolio_nav' %>
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
-    
-    <%= render 'shared/portfolio_footer' %> 
 
-    <%= source_helper("application") %>    
+    <%= render 'shared/portfolio_footer' %>
+
+    <%= source_helper("application") %>
   </body>
 </html>
