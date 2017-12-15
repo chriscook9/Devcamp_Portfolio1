@@ -1,3 +1,6 @@
+//= require jquery
+//= require jquery_ujs
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -13,3 +16,10 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= reqire jquery3
+//= require jquery-ui
+//= require html.sortable
+//= jquery popper
+//= require bootstrap-sprockets
+//= require html.sortable
+

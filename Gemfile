@@ -51,3 +51,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2', '>= 5.2.3' 
 gem 'devise', '~> 4.2'
+
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'devcamp_view_tool', '~> 0.1.0'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
