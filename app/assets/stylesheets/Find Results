@@ -1,0 +1,10 @@
+Searching 1589 files for "jordan hudgens"
+
+/Users/chriscook/DevcampPortfolio/app/helpers/application_helper.rb:
+   18  
+   19    def copyright_generator
+   20:     DevcampViewTool::Renderer.copyright 'Chris Cook', 'All rights reserved'
+   21    end
+   22  
+
+1 match in 1 file
