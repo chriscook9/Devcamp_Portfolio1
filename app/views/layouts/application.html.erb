@@ -15,9 +15,7 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-  	<p class="alert"><%= alert %></p>
-
+    
      <div class="site-wrapper">
 
       <div class="site-wrapper-inner"> 
@@ -31,7 +29,10 @@
         <%= yield %>
 
         <%= render "shared/application_footer" %>
-        
+
+        <%= render "shared/alerts" %>
+
+      
         <%= source_helper 'nav-link' %>
 
       </div>
