@@ -22,4 +22,4 @@
 //= jquery popper
 //= require bootstrap-sprockets
 //= require html.sortable
-
+//= cocoon

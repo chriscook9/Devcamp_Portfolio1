@@ -54,7 +54,12 @@ puts "9 portfolio items created"
   )
 end
 
-
+User.create(email: "hi@goodbye.com",
+            password: "jiggle",
+            password_confirmation: "jiggle",
+            name: "Fake",
+            roles: "site_admin"
+            )
 
 
 
