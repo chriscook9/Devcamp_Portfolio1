@@ -19,5 +19,7 @@ Bundler.require(*Rails.groups)
 
 module DevacampPortfolio
   class Application < Rails::Application
+    config.eager_load_paths << "#{rails.root}/lib"
+    config.secret_key_base = ENV{"SECRET_KEY_BASE"}
   end
 end
