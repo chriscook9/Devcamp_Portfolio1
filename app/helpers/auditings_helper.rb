@@ -1,0 +1,2 @@
+module AuditingsHelper
+end

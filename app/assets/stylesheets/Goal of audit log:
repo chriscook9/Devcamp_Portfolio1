@@ -1,0 +1,19 @@
+Goal of audit log:
+
+Keep track of if a employee had overtime or not
+
+Dependencies:
+  - User
+
+Attrs:
+  - STATUS:INTEGER (ENUM) -> PENDING, COMPLETE
+  - start_dat:date -> default previous Monday
+
+
+monday
+|
+|
+|
+sundy --- notifications
+
+rails g resource Auditing userreferences status:integer start_date:date end_date:date
