@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Bree Serif', serif;
-  color: white;
+  color: #555;
 }
 
 h1, .h1,
@@ -26,8 +26,7 @@ h6, .h6 {
   font-family: 'Oleo Script', cursive;
 
   font-weight: normal;
-  color: white
-  ;
+  color: #333;
 }
 
 
@@ -100,7 +99,7 @@ h6, .h6 {
 }
 .blog-description {
   font-size: 1.1rem;
-  color: white;
+  color: #999;
 }
 
 @media (min-width: 40em) {
@@ -189,6 +188,7 @@ text-size: 14px;
 }
 
 .blogcrumb a {
+  font_size: 1.25em;
   margn: 0px 10px 0px 10px;
  }
 

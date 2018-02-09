@@ -16,7 +16,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: rgb(0, 161, 250) ;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
@@ -238,13 +238,14 @@ color: #fff;
 
 
 .app-card-container {
-  color: black;
-  text-align: left
+  color: white;
+  text-align: left;
+  font-size: 16pt;
 }
 
 .app-card-container > .card {
   padding: 40px;
-  color: black;
+  color: #fff;
 }
 
 .profile-pic {
